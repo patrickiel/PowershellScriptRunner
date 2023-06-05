@@ -5,4 +5,23 @@ PowershellScriptRunner is a script that simplifies the execution and debugging o
 
 ## Usage
 You can then call this script from your .NET Build event as follows:
-`run_ps_script.bat "pathToYourPowershellScript.ps1" -ProjectDir $(ProjectDir) -TargetDir $(TargetDir)
+```
+C:\YourPath\run_ps_script.bat "yourPowershellScript.ps1" -ProjectDir $(ProjectDir) -TargetDir $(TargetDir)
+```
+yourPowershellScript.ps1
+```
+param(
+    [Parameter(Mandatory = $true)]
+    [string]$ProjectDir,
+
+    [Parameter(Mandatory = $true)]
+    [string]$TargetDir
+)
+
+Write-Host "ProjectDir: '$ProjectDir'"
+Write-Host "TargetDir: '$TargetDir'"
+```
+
+
+## Contributing
+Feel free to contribute to this project by opening a Pull Request for any enhancements, bug fixes, or improvements you would like to make.
