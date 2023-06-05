@@ -1,5 +1,5 @@
 # PowershellScriptRunner
-PowershellScriptRunner is a script that simplifies the execution and debugging of PowerShell scripts within .NET build events.
+PowershellScriptRunner is a windows batch script that simplifies the execution and debugging of PowerShell scripts within .NET build events.
 
 .NET Build events can become complex and challenging to manage with batch scripts. This script provides an alternative way to handle these events, the script runner executes a PowerShell script from a .NET Build event, and handles the input, output, and error reporting.
 
